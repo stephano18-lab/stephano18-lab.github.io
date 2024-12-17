@@ -38,6 +38,105 @@
             border-radius: 5px;
             font-family: "Courier New", Time Roman
     }
+
+        /* General Reset */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 10px;
+    gap: 15px;
+}
+
+/* Columns */
+.col-12 {
+    width: 100%;
+}
+
+.col-md-6 {
+    width: calc(50% - 20px);
+    min-width: 280px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background: white;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover Effects for Columns */
+.col-md-6:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings */
+h3, h4, h5 {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.text-success {
+    color: #28a745;
+}
+
+.text-info {
+    color: #17a2b8;
+}
+
+/* Paragraph */
+p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* Buttons */
+button {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-danger {
+    background: linear-gradient(90deg, #dc3545, #ff6b6b);
+    color: white;
+}
+
+.btn-danger:hover {
+    background: linear-gradient(90deg, #ff6b6b, #dc3545);
+    box-shadow: 0 4px 8px rgba(220, 53, 69, 0.3);
+}
+
+/* Images */
+img {
+    display: block;
+    margin: 10px auto;
+    border: 3px solid #eee;
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+img:hover {
+    border-color: #17a2b8;
+    transform: rotate(3deg) scale(1.1);
+}
+
+/* Links */
+a {
+    text-decoration: none;
+
     </style>
 </head>
 <body>
